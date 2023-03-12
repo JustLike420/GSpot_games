@@ -15,6 +15,10 @@ class Group(models.Model):
     name = models.CharField(max_length=256)
     type = models.CharField(max_length=1, choices=TypeGroup.choices)
 
+    class Meta:
+        verbose_name = 'группа'
+        verbose_name_plural = 'группы'
+
 
 class GroupElement(models.Model):
     ...
